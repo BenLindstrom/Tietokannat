@@ -42,7 +42,7 @@
   <table id="TAB9" populated="true" UUID="827136a8-69fe-4fc0-b6e8-555cd338d60a" name="Yhteyshenkilö" objectType="TABLE" physicalName="yhteyshenkilo" >
    <remarks></remarks>
    <folder id="FOLTAB91" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL10" populated="true" UUID="c1b04f8b-683b-4f18-854f-e78b64177e22" autoIncrement="true" autoIncrementSequenceName="yhteyshenkilo_yhteyshenkilo-id_seq" defaultValue="" name="YhteishenkilöID" nullable="0" physicalName="yhteyshenkilo-id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL10" populated="true" UUID="c1b04f8b-683b-4f18-854f-e78b64177e22" autoIncrement="true" autoIncrementSequenceName="yhteyshenkilo_yhteyshenkilo_id_seq" defaultValue="" name="YhteyshenkilöID" nullable="0" physicalName="yhteyshenkilo_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks>Dummy perusavain. Tulevaisuuden tarpeita varten</remarks>
     </column>
     <column id="COL11" populated="true" UUID="4845e711-9f87-485b-b148-7cbf6759c69f" autoIncrement="false" autoIncrementSequenceName="yhteystyyppi_yhteystyyppi_seq" defaultValue="" name="Yhteystyyppi" nullable="0" physicalName="yhteystyyppi" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -60,7 +60,7 @@
     <column id="COL15" populated="true" UUID="8725d284-c531-47f8-bcf1-baa18e2a0951" autoIncrement="false" autoIncrementSequenceName="yhteyshenkilo_sahkoposti_seq" defaultValue="" name="Sähköposti" nullable="0" physicalName="sahkoposti" precision="40" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL16" populated="true" UUID="05361a8c-9ca6-4981-846d-f30eaceb7c0b" autoIncrement="false" autoIncrementSequenceName="asiakas_asiakasnumero_seq" defaultValue="" name="Asiakasnumero" nullable="0" physicalName="asiakasnumero" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL16" populated="true" UUID="05361a8c-9ca6-4981-846d-f30eaceb7c0b" autoIncrement="false" autoIncrementSequenceName="asiakas_asiakasnumero_seq_1" defaultValue="" name="Asiakasnumero" nullable="0" physicalName="asiakasnumero" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     </folder>
@@ -70,14 +70,14 @@
     </folder>
     <folder id="FOLTAB94" populated="true" name="Indices" physicalName="Indices" type="4">
     <index id="IDX17" populated="true" UUID="f3efef07-1ed1-4415-89ca-18fb7caed825" clustered="false" name="yhteyshenkilo_pk" physicalName="yhteyshenkilo_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC18" populated="true" UUID="42acc40c-f2cf-4336-9768-d649fdeedd71" ascendingOrDescending="UNSPECIFIED" column-ref="COL10" name="YhteishenkilöID" physicalName="yhteyshenkilo-id" />
+     <index-column id="IDC18" populated="true" UUID="42acc40c-f2cf-4336-9768-d649fdeedd71" ascendingOrDescending="UNSPECIFIED" column-ref="COL10" name="YhteyshenkilöID" physicalName="yhteyshenkilo_id" />
     </index>
    </folder>
   </table>
   <table id="TAB19" populated="true" UUID="58edccd7-f357-481b-8682-dd8a9dfc8fe3" name="Yhteystyyppi" objectType="TABLE" physicalName="yhteystyyppi" >
    <remarks></remarks>
    <folder id="FOLTAB191" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL20" populated="true" UUID="a9baa495-f8aa-49ff-bb4e-9d138f993e2c" autoIncrement="false" autoIncrementSequenceName="yhteystyyppi_yhteystyyppi_seq" defaultValue="" name="Yhteystyyppi" nullable="0" physicalName="yhteystyyppi" precision="20" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL20" populated="true" UUID="a9baa495-f8aa-49ff-bb4e-9d138f993e2c" autoIncrement="false" autoIncrementSequenceName="yhteystyyppi_yhteystyyppi_seq_1" defaultValue="" name="Yhteystyyppi" nullable="0" physicalName="yhteystyyppi" precision="20" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks>Taulu on luotu vain käyttöliittymää varten. Se yestää käyttäjää syöttämästä Yhteyshenkilö-tauluun muita kuin ennalta määrättyjä arvoja.</remarks>
     </column>
     </folder>
@@ -126,7 +126,7 @@
   <table id="TAB32" populated="true" UUID="3451250c-b3d1-4ea6-bdc7-f2fab7b979cf" name="Tuoteryhmä" objectType="TABLE" physicalName="tuoteryhma" >
    <remarks></remarks>
    <folder id="FOLTAB321" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL33" populated="true" UUID="f466be75-2614-4f95-9b85-cd52f24fe877" autoIncrement="false" autoIncrementSequenceName="tuoteryhma_tuoteryhma_seq" defaultValue="" name="Tuoteryhmä" nullable="0" physicalName="tuoteryhma" precision="20" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL33" populated="true" UUID="f466be75-2614-4f95-9b85-cd52f24fe877" autoIncrement="false" autoIncrementSequenceName="tuoteryhma_tuoteryhma_seq_1" defaultValue="" name="Tuoteryhmä" nullable="0" physicalName="tuoteryhma" precision="20" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -146,10 +146,10 @@
     <column id="COL37" populated="true" UUID="48004abe-2eb7-4b5a-99b5-04ca307fd5dd" autoIncrement="true" autoIncrementSequenceName="vuokraus_tapahtumaid_seq" defaultValue="" name="TapahtumaID" nullable="0" physicalName="tapahtumaid" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks>Dummy id tulevia käyttötarkoituksia varten</remarks>
     </column>
-    <column id="COL38" populated="true" UUID="e5fbfef5-7b33-4054-b169-e21daf0aa938" autoIncrement="false" autoIncrementSequenceName="asiakas_asiakasnumero_seq" defaultValue="" name="Asiakasnumero" nullable="0" physicalName="asiakasnumero" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL38" populated="true" UUID="e5fbfef5-7b33-4054-b169-e21daf0aa938" autoIncrement="false" autoIncrementSequenceName="asiakas_asiakasnumero_seq_2" defaultValue="" name="Asiakasnumero" nullable="0" physicalName="asiakasnumero" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL39" populated="true" UUID="59f23e4f-b106-4920-9df9-84c7a967e766" autoIncrement="false" autoIncrementSequenceName="tuote_tyokalukoodi_seq" defaultValue="" name="Työkalukoodi" nullable="0" physicalName="tyokalukoodi" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL39" populated="true" UUID="59f23e4f-b106-4920-9df9-84c7a967e766" autoIncrement="false" autoIncrementSequenceName="tuote_tyokalukoodi_seq_1" defaultValue="" name="Työkalukoodi" nullable="0" physicalName="tyokalukoodi" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     <column id="COL40" populated="true" UUID="04ca7cdb-f28a-423e-bb55-283cfc50449c" autoIncrement="false" autoIncrementSequenceName="vuokraus_alkamispaiva_seq" defaultValue="" name="Alkamispäivä" nullable="0" physicalName="alkamispaiva" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >

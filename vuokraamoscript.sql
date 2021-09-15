@@ -22,7 +22,7 @@ CREATE TABLE tuote (
 CREATE TABLE yhteystyyppi (
                 yhteystyyppi TEXT PRIMARY KEY
 );
---COMMENT ON COLUMN yhteystyyppi.yhteystyyppi IS 'Taulu on luotu vain k�ytt�liittym�� varten. Se est�� k�ytt�j�� sy�tt�m�st� Yhteyshenkil�-tauluun muita kuin ennalta m��r�ttyj� arvoja.';
+--COMMENT ON COLUMN yhteystyyppi.yhteystyyppi IS 'Taulu on luotu vain k?ytt?liittym?? varten. Se est?? k?ytt?j?? sy?tt?m?st? Yhteyshenkil?-tauluun muita kuin ennalta m??r?ttyj? arvoja.';
 
 
 CREATE TABLE asiakas (
@@ -48,7 +48,7 @@ CREATE TABLE yhteyshenkilo (
                 FOREIGN key (asiakasnumero) REFERENCES asiakas (asiakasnumero)
 );
 --COMMENT ON COLUMN yhteyshenkilo.yhteyshenkilo_id IS 'Dummy perusavain. Tulevaisuuden tarpeita varten';
---COMMENT ON COLUMN yhteyshenkilo.yhteystyyppi IS 'Taulu on luotu vain k�ytt�liittym�� varten. Se yest�� k�ytt�j�� sy�tt�m�st� Yhteyshenkil�-tauluun muita kuin ennalta m��r�ttyj� arvoja.';
+--COMMENT ON COLUMN yhteyshenkilo.yhteystyyppi IS 'Taulu on luotu vain k?ytt?liittym?? varten. Se yest?? k?ytt?j?? sy?tt?m?st? Yhteyshenkil?-tauluun muita kuin ennalta m??r?ttyj? arvoja.';
 CREATE TABLE vuokraus (
                 tapahtumaid INTEGER PRIMARY KEY,
                 asiakasnumero INTEGER NOT NULL,
@@ -58,6 +58,6 @@ CREATE TABLE vuokraus (
                 FOREIGN KEY (asiakasnumero) REFERENCES asiakas (asiakasnumero),
                 FOREIGN KEY (tyokalukoodi) REFERENCES tuote (tyokalukoodi)
 );
---COMMENT ON COLUMN vuokraus.tapahtumaid IS 'Dummy id tulevia k�ytt�tarkoituksia varten';
+--COMMENT ON COLUMN vuokraus.tapahtumaid IS 'Dummy id tulevia k?ytt?tarkoituksia varten';
 
 
